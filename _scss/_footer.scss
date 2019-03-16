@@ -1,0 +1,90 @@
+$logo-width: 120px;
+
+.footer-wrapper {
+   @include doc-padding($top: 16px, $side: 65px);
+   // media queries ...
+   @include MQ-1024 {
+      @include doc-padding($top: 14px, $side: 50px);
+   }
+   @include MQ-768 {
+      @include doc-padding($top: 18px, $side: 35px);
+   }
+   @include MQ-414 {
+      @include doc-padding($top: 18px, $side: 20px);
+   }
+}
+
+.footer-container {
+   position: relative;
+
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+
+   margin: 0 auto;
+
+   font-size: $fs - 3px;
+
+   @include MQ-768 {
+      align-items: center;
+      flex-direction: column;
+   }
+
+   .dl-logo {
+      width: $logo-width;
+      height: auto;
+
+      @include MQ-768 {
+         margin-bottom: 20px;
+      }
+
+      & img {
+         display: block;
+      }
+
+      & .tooltip {
+         position: absolute;
+         z-index: 1;
+         top: 50%;
+         left: $logo-width + 5px;
+
+         visibility: hidden;
+
+         width: 300px;
+         padding: 12px 15px;
+
+         transition: all 400ms ease;
+         transform: translateY(-50%);
+         text-align: center;
+
+         opacity: 0;
+         color: $white;
+         background-color: $p-color;
+
+         @include MQ-768 {
+            top: -64px;
+            left: 50%;
+
+            transform: translateX(-50%);
+         }
+
+         &::after {
+            content: "";
+         }
+      }
+
+      &:hover .tooltip {
+         visibility: visible;
+
+         opacity: 1;
+      }
+   }
+
+   .footer-content {
+      text-align: right;
+
+      @include MQ-768 {
+         text-align: center;
+      }
+   }
+}

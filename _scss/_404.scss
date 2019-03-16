@@ -1,0 +1,32 @@
+.error-container,
+.error-wrapper {
+   height: 100%;
+}
+
+.error-container {
+   img {
+      margin-top: 4rem;
+   }
+
+   a {
+      display: block;
+
+      width: 100%;
+      max-width: 400px;
+      margin: 5rem auto 0;
+
+      color: white;
+      background-color: #0da360;
+
+      font-size: 1.2rem;
+
+      @include MQ-414 {
+         font-size: 1rem;
+      }
+
+      &:hover {
+         background-color: darken(#0da360, 16%);
+      }
+   }
+
+}

@@ -1,0 +1,17 @@
+
+/*
+  X-Frame-Options: DENY
+  X-XSS-Protection: 1; mode=block
+  X-Content-Type-Options: nosniff
+  Content-Security-Policy: script-src 'nonce-6eece5b0f251e014550f' 'unsafe-inline'; object-src 'none'; default-src SITE-URL:* 'nonce-db472b84fce70c412a78'; img-src 'self' https://www.google-analytics.com www.google-analytics.com https://stats.g.doubleclick.net; style-src 'self'; font-src 'self'; connect-src 'self' https://www.google-analytics.com www.google-analytics.com https://stats.g.doubleclick.net; base-uri 'none';
+
+/*.jpg
+  Cache-Control: max-age=31536000, public
+/*.png
+Cache-Control: max-age=31536000, public
+/*.svg
+Cache-Control: max-age=31536000, public
+/*.css
+  Cache-Control: max-age=31536000, public
+/*.js
+  Cache-Control: max-age=31536000, public

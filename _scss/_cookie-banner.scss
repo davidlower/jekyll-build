@@ -1,0 +1,52 @@
+.cookie-banner {
+   position: fixed;
+   z-index: 5;
+   bottom: 0;
+   left: 0;
+
+   display: none;
+
+   width: 100%;
+
+   color: $p-color;
+   background-color: rgba(10, 10, 10, 0.91);
+
+   @include doc-padding($top: 30px, $side: 65px);
+   @include MQ-1024 {
+      @include doc-padding($top: 22px, $side: 50px);
+   }
+   @include MQ-768 {
+      @include doc-padding($top: 30px, $side: 35px);
+   }
+   @include MQ-414 {
+      @include doc-padding($top: 18px, $side: 20px);
+   }
+}
+
+.cookie-container {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+
+   @include MQ-768 {
+      flex-direction: column;
+   }
+
+   .cookie-content {
+      margin-right: 2rem;
+
+      @include MQ-768 {
+         width: 100%;
+         margin-right: 0;
+      }
+   }
+
+   .global__btn-primary {
+      cursor: pointer;
+
+      @include MQ-768 {
+         width: 100%;
+         margin-top: 16px;
+      }
+   }
+}

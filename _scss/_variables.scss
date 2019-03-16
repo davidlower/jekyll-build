@@ -1,0 +1,90 @@
+// ***************
+// COLOR VARIABLES
+// ***************
+$facebook: #4267b2;
+$twitter: #1b95e0;
+$f-color: #303030;
+$p-color: #08988f;
+$s-color: #0A0A0A;
+$t-color: #1058d9;
+$white: #ffffff;
+
+// *************
+// FONT FAMILIES
+// *************
+@font-face {
+   font-family: 'raleway';
+   src: url("../fonts/Raleway-Light.ttf");
+   font-style: normal;
+   font-weight: 300;
+}
+@font-face {
+   font-family: 'ubuntu';
+   src: url("../fonts/Ubuntu-Light.ttf");
+   font-style: normal;
+   font-weight: 300;
+}
+
+// **************
+// FONT VARIABLES
+// **************
+$p-f: ubuntu, sans-serif;
+$s-f: raleway, sans-serif;
+$fs: 16px;
+$line-height: $fs + 6px;
+
+// *******************
+// CONTAINER VARIABLES
+// *******************
+$doc-p-top: 110px;
+$doc-p-side: 65px;
+$website-width: 100%;
+$container-width: 1300px;
+
+// ******
+// MIXINS
+// ******
+// for wrapper document padding
+@mixin doc-padding($top, $side) {
+   padding: $top $side;
+}
+@mixin title($size, $height, $weight) {
+   font-size: $size;
+   line-height: $height;
+   font-weight: $weight;
+   font-family: $s-f;
+}
+
+// ************************
+// MIXINS FOR MEDIA QUERIES
+// ************************
+// iPhone 5
+@mixin MQ-320 {
+   @media screen and (max-width: 320px) {
+      @content;
+   }
+}
+// iPhone 8 plus
+@mixin MQ-414 {
+   @media screen and (max-width: 414px) {
+      @content;
+   }
+}
+// iPad portrait
+@mixin MQ-768 {
+   @media screen and (max-width: 768px) {
+      @content;
+   }
+}
+// iPad landscape
+@mixin MQ-1024 {
+   @media screen and (max-width: 1024px) {
+      @content;
+   }
+}
+//desktop and up
+@mixin MQ-1200 {
+   @media screen and (max-width: 1200px) {
+      @content;
+   }
+}

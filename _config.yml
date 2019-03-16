@@ -1,0 +1,22 @@
+exclude: ["README.md", "package.json", "package-lock.json", "gulpfile.js", ".DS_Store", "node_modules", 'Gemfile', "Gemfile.lock", "vendor/bundle/", "vendor/gems/", "vendor/cache/", "vendor/ruby/", "robots.txt"]
+include:
+   - "_headers"
+
+permalink: pretty
+
+url: https://jonhdoe.com/
+baseurl: ""
+website-date: 10th March 2019
+location: Lego land
+title: John Doe website
+email: johndoe@gmail.com
+meta: John Doe is the king.
+instagram: https://www.instagram.com/johndoe/
+facebook: https://www.facebook.com/johndoe/
+
+designer-url: https://davidlower.co.uk/
+designer-name: David Lower
+designer-company: David Lower Designs
+
+plugins:
+  - jekyll-sitemap
