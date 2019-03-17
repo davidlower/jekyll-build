@@ -71,7 +71,7 @@ $nav-height-sticky: 90px;
    height: $nav-height;
 
    @extend .nav;
-   @include MQ-768 {
+   @include MQ(m) {
       position: fixed;
       top: 0;
 
@@ -102,7 +102,7 @@ $nav-height-sticky: 90px;
 
    .nav__list-desktop {
       @extend .nav__list;
-      @include MQ-768 {
+      @include MQ(m) {
          height: $nav-height;
          margin-top: 20px;
 
@@ -163,7 +163,7 @@ $nav-height-sticky: 90px;
    cursor: pointer;
    transform: rotateZ(180deg);
 
-   @include MQ-768 {
+   @include MQ(m) {
       display: block;
    }
 

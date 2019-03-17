@@ -1,16 +1,15 @@
 $logo-width: 120px;
 
 .footer-wrapper {
-   @include doc-padding($top: 16px, $side: 65px);
-   // media queries ...
-   @include MQ-1024 {
-      @include doc-padding($top: 14px, $side: 50px);
+   @include doc-padding(16px);
+   @include MQ(l) {
+      @include doc-padding(14px, 50px);
    }
-   @include MQ-768 {
-      @include doc-padding($top: 18px, $side: 35px);
+   @include MQ(m) {
+      @include doc-padding(18px, 35px);
    }
-   @include MQ-414 {
-      @include doc-padding($top: 18px, $side: 20px);
+   @include MQ(s) {
+      @include doc-padding(18px, 25px);
    }
 }
 
@@ -25,7 +24,7 @@ $logo-width: 120px;
 
    font-size: $fs - 3px;
 
-   @include MQ-768 {
+   @include MQ(m) {
       align-items: center;
       flex-direction: column;
    }
@@ -34,7 +33,7 @@ $logo-width: 120px;
       width: $logo-width;
       height: auto;
 
-      @include MQ-768 {
+      @include MQ(m) {
          margin-bottom: 20px;
       }
 
@@ -61,7 +60,7 @@ $logo-width: 120px;
          color: $white;
          background-color: $p-color;
 
-         @include MQ-768 {
+         @include MQ(m) {
             top: -64px;
             left: 50%;
 
@@ -83,7 +82,7 @@ $logo-width: 120px;
    .footer-content {
       text-align: right;
 
-      @include MQ-768 {
+      @include MQ(m) {
          text-align: center;
       }
    }

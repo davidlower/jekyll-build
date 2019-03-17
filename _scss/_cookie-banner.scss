@@ -1,4 +1,4 @@
-.cookie-banner {
+.cookie-wrapper {
    position: fixed;
    z-index: 5;
    bottom: 0;
@@ -11,15 +11,15 @@
    color: $p-color;
    background-color: rgba(10, 10, 10, 0.91);
 
-   @include doc-padding($top: 30px, $side: 65px);
-   @include MQ-1024 {
-      @include doc-padding($top: 22px, $side: 50px);
+   @include doc-padding(30px, 65px);
+   @include MQ(l) {
+      @include doc-padding(18px, 50px);
    }
-   @include MQ-768 {
-      @include doc-padding($top: 30px, $side: 35px);
+   @include MQ(m) {
+      @include doc-padding(22px, 35px);
    }
-   @include MQ-414 {
-      @include doc-padding($top: 18px, $side: 20px);
+   @include MQ(s) {
+      @include doc-padding(18px, 20px);
    }
 }
 
@@ -28,14 +28,14 @@
    align-items: center;
    justify-content: space-between;
 
-   @include MQ-768 {
+   @include MQ(m) {
       flex-direction: column;
    }
 
    .cookie-content {
       margin-right: 2rem;
 
-      @include MQ-768 {
+      @include MQ(m) {
          width: 100%;
          margin-right: 0;
       }
@@ -44,7 +44,7 @@
    .global__btn-primary {
       cursor: pointer;
 
-      @include MQ-768 {
+      @include MQ(m) {
          width: 100%;
          margin-top: 16px;
       }

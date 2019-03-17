@@ -127,6 +127,7 @@ function imgCompression(done) {
 // BROWSERSYNC BUILD
 function bs(done) {
    browserSync.init({
+      injectChanges: true,
       files: ['_site' + '/**/'],
       open: false,
       port: 4000,

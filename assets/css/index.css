@@ -52,21 +52,15 @@ html {
 
 .global__h1 {
   font-size: 2.3rem;
-  line-height: 2.8rem;
-  font-weight: 300;
-  font-family: raleway, sans-serif; }
+  line-height: 2.8rem; }
 
 .global__h2 {
   font-size: 1.8rem;
-  line-height: 2.2rem;
-  font-weight: 300;
-  font-family: raleway, sans-serif; }
+  line-height: 2.2rem; }
 
 .global__h3 {
   font-size: 1.3rem;
-  line-height: 1.6rem;
-  font-weight: 300;
-  font-family: raleway, sans-serif; }
+  line-height: 1.6rem; }
 
 .global__link, .global__link-primary, .global__link-secondary {
   text-decoration: none; }
@@ -239,7 +233,7 @@ html {
       padding: 18px 35px; } }
   @media screen and (max-width: 414px) {
     .footer-wrapper {
-      padding: 18px 20px; } }
+      padding: 18px 25px; } }
 
 .footer-container {
   position: relative;
@@ -310,7 +304,7 @@ html {
     .privacy-wrapper .global__btn-primary {
       width: 100%; } }
 
-.cookie-banner {
+.cookie-wrapper {
   position: fixed;
   z-index: 5;
   bottom: 0;
@@ -321,13 +315,13 @@ html {
   background-color: rgba(10, 10, 10, 0.91);
   padding: 30px 65px; }
   @media screen and (max-width: 1024px) {
-    .cookie-banner {
-      padding: 22px 50px; } }
+    .cookie-wrapper {
+      padding: 18px 50px; } }
   @media screen and (max-width: 768px) {
-    .cookie-banner {
-      padding: 30px 35px; } }
+    .cookie-wrapper {
+      padding: 22px 35px; } }
   @media screen and (max-width: 414px) {
-    .cookie-banner {
+    .cookie-wrapper {
       padding: 18px 20px; } }
 
 .cookie-container {

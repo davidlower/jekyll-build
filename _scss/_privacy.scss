@@ -18,11 +18,13 @@
       margin-bottom: 0.9rem;
    }
 
-   .global__btn-primary {
-      margin-top: 0.9rem;
+   .global {
+      &__btn-primary {
+         margin-top: 0.9rem;
 
-      @include MQ-414 {
-         width: 100%;
+         @include MQ(s) {
+            width: 100%;
+         }
       }
    }
 }

@@ -20,7 +20,7 @@
 
       font-size: 1.2rem;
 
-      @include MQ-414 {
+      @include MQ(s) {
          font-size: 1rem;
       }
 

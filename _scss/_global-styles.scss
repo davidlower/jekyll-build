@@ -25,14 +25,14 @@ html {
 
 .global {
    &__wrapper {
-      @include doc-padding($top: 110px, $side: 65px);
-      @include MQ-1024 {
+      @include doc-padding();
+      @include MQ(l) {
          @include doc-padding($top: 70px, $side: 50px);
       }
-      @include MQ-768 {
+      @include MQ(m) {
          @include doc-padding($top: 55px, $side: 35px);
       }
-      @include MQ-414 {
+      @include MQ(s) {
          @include doc-padding($top: 35px, $side: 20px);
       }
    }
@@ -42,7 +42,7 @@ html {
       max-width: $container-width;
       margin: 0 auto;
 
-      @include MQ-768 {
+      @include MQ(m) {
          font-size: $fs - 2px;
       }
    }
