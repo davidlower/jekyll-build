@@ -7,6 +7,7 @@ $f-color: #303030;
 $p-color: #08988f;
 $s-color: #0A0A0A;
 $t-color: #1058d9;
+$sub-footer: #3b3e3e;
 $white: #ffffff;
 
 // *************
@@ -49,9 +50,17 @@ $container-width: 1300px;
    padding: $top $side;
 }
 
-@mixin title($size, $height, $weight: 300, $family: $s-f) {
+@mixin uppercase($uppercase: uppercase, $spacing: 5px) {
+   text-transform: $uppercase;
+   letter-spacing: $spacing;
+}
+
+@mixin title($size, $height, $ml, $weight: 300, $family: $s-f) {
    font-size: $size;
    line-height: $height;
+   font-weight: $weight;
+   font-family: $family;
+   margin-left: $ml;
 }
 
 // ************************

@@ -8,7 +8,7 @@
 
    width: 100%;
 
-   color: $p-color;
+   color: $f-color;
    background-color: rgba(10, 10, 10, 0.91);
 
    @include doc-padding(30px, 65px);
@@ -41,12 +41,11 @@
       }
    }
 
-   .global__btn-primary {
-      cursor: pointer;
-
+   .agree-cookies {
       @include MQ(m) {
+         max-width: 300px;
          width: 100%;
-         margin-top: 16px;
+         margin-top: 1.4rem;
       }
    }
 }

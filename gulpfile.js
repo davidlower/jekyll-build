@@ -5,7 +5,6 @@ const gulp = require('gulp');
 const uglify = require('gulp-uglify-es').default;
 const cleanCSS = require('gulp-clean-css');
 const purge = require('gulp-css-purge');
-const groupmq = require('gulp-group-css-media-queries');
 const rename = require('gulp-rename');
 // CONCAT PLUGIN
 const concat = require('gulp-concat');
@@ -41,7 +40,6 @@ function css(done) {
 // CSS AUTOPREFIXER, MINIFICATION, PURGING, MEDIA-QUERIES
 function cssBuild(done) {
    gulp.src('assets/css/**/*.css')
-      .pipe(groupmq())
       .pipe(purge({
          trim: true,
          shorten: true,

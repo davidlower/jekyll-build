@@ -37,7 +37,7 @@ $(document).ready(function() {
 
    }
    // calling the media query function
-   var desktop = window.matchMedia("(min-width: 765px)");
+   var desktop = window.matchMedia("(min-width: 767px)");
    sticky(desktop);
    desktop.addListener(sticky);
 

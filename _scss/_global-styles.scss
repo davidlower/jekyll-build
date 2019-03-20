@@ -51,15 +51,22 @@ html {
    // TYPOGRAPHY
    // **********
    &__h1 {
-      @include title($size: 2.3rem, $height: 2.8rem, $weight: 300);
+      @include title($size: 5rem, $height: 5.7rem, $ml: -6px);
    }
 
    &__h2 {
-      @include title($size: 1.8rem, $height: 2.2rem, $weight: 300);
+      @include title($size: 5rem, $height: 5.7rem, $ml: -6px);
+      @include MQ(l) {
+         @include title($size: 3.5rem, $height: 4rem, $ml: -4px);
+      }
    }
 
    &__h3 {
-      @include title($size: 1.3rem, $height: 1.6rem, $weight: 300);
+      @include title($size: 1.3rem, $height: 1.6rem, $ml: 0);
+   }
+
+   &__body {
+      line-height: 1.5rem;
    }
 
    // *****
@@ -119,7 +126,7 @@ html {
    }
 
    &__btn-primary {
-      color: white;
+      color: $white;
       background-color: $p-color;
 
       @extend .global__btn;

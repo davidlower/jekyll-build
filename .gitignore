@@ -7,6 +7,7 @@ node_modules
 # package-lock.json
 # package.json
 # robots.txt
+# README.md
 
 # Created by https://www.gitignore.io/api/node,macos,jekyll,windows
 # Edit at https://www.gitignore.io/?templates=node,macos,jekyll,windows

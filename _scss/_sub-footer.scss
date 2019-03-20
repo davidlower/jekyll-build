@@ -1,6 +1,9 @@
 $logo-width: 120px;
 
 .footer-wrapper {
+   background-color: $sub-footer;
+   color: $white;
+
    @include doc-padding(16px);
    @include MQ(l) {
       @include doc-padding(14px, 50px);
@@ -22,11 +25,15 @@ $logo-width: 120px;
 
    margin: 0 auto;
 
-   font-size: $fs - 3px;
+   font-size: $fs - 2px;
 
    @include MQ(m) {
       align-items: center;
       flex-direction: column;
+   }
+
+   @include MQ(s) {
+      font-size: $fs - 4px;
    }
 
    .dl-logo {
@@ -81,6 +88,8 @@ $logo-width: 120px;
 
    .footer-content {
       text-align: right;
+
+      line-height: 1.3rem;
 
       @include MQ(m) {
          text-align: center;

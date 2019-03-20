@@ -9,7 +9,11 @@ baseurl: ""
 website-date: 10th March 2019
 location: Lego land
 title: John Doe website
+company: John Doe company
 email: johndoe@gmail.com
+mobile: 00000 000000
+logo: /assets/img/david-lower-designs-logo.svg
+
 meta: John Doe is the king.
 instagram: https://www.instagram.com/johndoe/
 facebook: https://www.facebook.com/johndoe/
