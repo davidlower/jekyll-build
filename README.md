@@ -1,14 +1,3 @@
-### Initializing jekyll to your site build
-
-$ gem install bundler jekyll
-
-this will install Jekyll and bundler
-
-$ bundle update
-
-updates all the gems for jekyll to run correctly
-NOT SURE THIS STEP NEEDS TO BE DONE ANYMORE
-
 ### Install node_module
 
 $ npm install
@@ -17,11 +6,25 @@ $ npm install
 
 Update this file first - remove all # from the first paragraph of files.
 
+### Initialise git
+
+$ git init
+$ git add .
+$ git commit -m "first commit"
+$ git remote add origin URL_TO_GITHUB_REPO
+$ git push --set-upstream origin master
+
+### config.yml file
+
+Configure the \_config.yml file
+
 ### headers file
 
 Change the url under default-src
 Use this format <https://url:*>
-Change the nonces for favicon manifest.json in head.html and nonce for all scripts - including sub-footer script and default-layout page
+Change the nonces for:-
+favicon manifest.json in head.html
+all scripts - including sub-footer script and google analyics default-layout page
 add a report uri to \_headers CSP if needed
 report-uri <https://davidlowerdesigns.report-uri.com/r/d/csp/enforce>;
 

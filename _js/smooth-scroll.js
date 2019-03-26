@@ -3,25 +3,24 @@
 $(document).ready(function() {
 
    // Smooth scrolling
-   var scrollLink = $('.nav__link');
-   scrollLink.click(function(e) {
+   $('.nav__link').click(function(e) {
       e.preventDefault();
       $('body,html').animate({
          scrollTop: $(this.hash).offset().top
-      }, 1000);
+      }, 100);
    });
 
    // Active link switching
-   // $(window).scroll(function() {
-   //    var scrollbarLocation = $(this).scrollTop();
-   //    scrollLink.each(function() {
-   //       var sectionOffset = $(this.hash).offset().top -80;
-   //       if (sectionOffset <= scrollbarLocation) {
-   //          $(".nav__link").removeClass('active');
-   //          $(this).addClass('active');
-   //       }
-   //    });
-   // });
+   $(window).scroll(function() {
+      var scrollbarLocation = $(this).scrollTop();
+      $('.nav__link').each(function() {
+         var sectionOffset = $(this.hash).offset().top - 80; // this 80 matches the size of the nav bar height
+         if (sectionOffset <= scrollbarLocation) {
+            $(".nav__link").removeClass('active');
+            $(this).addClass('active');
+         }
+      });
+   });
 
    // Maintaining urls
    function markLinkActive(event) {
@@ -39,7 +38,7 @@ $(document).ready(function() {
       var scrollPosition = $(window).height() + $(window).scrollTop();
       if ((scrollHeight - scrollPosition) / scrollHeight === 0) {
          $(".nav__link").removeClass('active');
-         $('.contact').addClass('active');
+         $('.nav-contact').addClass('active');
       }
    });
 });

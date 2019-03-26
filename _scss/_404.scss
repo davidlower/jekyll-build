@@ -16,7 +16,7 @@
       margin: 5rem auto 0;
 
       color: white;
-      background-color: #0da360;
+      background-color: $p-color;
 
       font-size: 1.2rem;
 
@@ -25,7 +25,7 @@
       }
 
       &:hover {
-         background-color: darken(#0da360, 16%);
+         background-color: darken($p-color, 10%);
       }
    }
 

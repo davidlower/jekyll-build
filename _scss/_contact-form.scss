@@ -18,7 +18,7 @@
       background-color: rgba(255, 255, 255, 0.75);
 
       font-family: $p-f;
-      font-size: 14px;
+      font-size: $fs;
       font-weight: 300;
 
       &-first {
@@ -34,6 +34,10 @@
          @include MQ(s) {
             font-size: $fs - 4px;
          }
+      }
+
+      &[type=text] {
+         appearance: none;
       }
    }
 

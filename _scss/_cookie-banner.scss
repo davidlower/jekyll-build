@@ -8,7 +8,7 @@
 
    width: 100%;
 
-   color: $f-color;
+   color: $p-color;
    background-color: rgba(10, 10, 10, 0.91);
 
    @include doc-padding(30px, 65px);
@@ -39,12 +39,15 @@
          width: 100%;
          margin-right: 0;
       }
+      @include MQ(s) {
+         font-size: $fs - 4px;
+      }
    }
 
    .agree-cookies {
       @include MQ(m) {
-         max-width: 300px;
          width: 100%;
+         max-width: 300px;
          margin-top: 1.4rem;
       }
    }
