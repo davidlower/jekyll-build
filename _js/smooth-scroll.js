@@ -3,21 +3,24 @@
 $(document).ready(function() {
 
    // Smooth scrolling
-   $('.nav__link').click(function(e) {
+   $('.smooth').click(function(e) {
       e.preventDefault();
       $('body,html').animate({
          scrollTop: $(this.hash).offset().top
-      }, 100);
+      }, 500);
    });
 
    // Active link switching
    $(window).scroll(function() {
       var scrollbarLocation = $(this).scrollTop();
-      $('.nav__link').each(function() {
-         var sectionOffset = $(this.hash).offset().top - 80; // this 80 matches the size of the nav bar height
-         if (sectionOffset <= scrollbarLocation) {
-            $(".nav__link").removeClass('active');
-            $(this).addClass('active');
+      $('.smooth').each(function() {
+         var offset = $(this.hash).offset();
+         if (offset) {
+            var sectionOffset = offset.top;
+            if (sectionOffset <= scrollbarLocation) {
+               $(".smooth").removeClass('active');
+               $(this).addClass('active');
+            }
          }
       });
    });

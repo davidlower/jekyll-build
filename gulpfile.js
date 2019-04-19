@@ -74,10 +74,11 @@ function jsBuild(done) {
 // LAUNCH THIS AT THE BEGINNING OF ANY PROJECT - GRABS ALL VENDORS FROM NODE MODULES
 function launchProject(done) {
    // LITY - LIGHTBOX MODULE FOR JQUERY
+   // https://sorgalla.com/lity/
    // gulp.src('node_modules/lity/dist/lity.min.js')
-   //    .pipe(gulp.dest('_js/vendor'));
+   //    .pipe(gulp.dest('_js'));
    // gulp.src('node_modules/lity/dist/lity.min.css')
-   //    .pipe(gulp.dest('_scss/vendor'));
+   //    .pipe(gulp.dest('_scss'));
 
    // JQUERY
    gulp.src('node_modules/jquery/dist/jquery.min.js')
@@ -86,13 +87,14 @@ function launchProject(done) {
 
    // SIMPLE GRID - GRID SYSTEM LIKE BOOTSTRAP
    // gulp.src('node_modules/simplegrid/simple-grid.scss')
-   //    .pipe(gulp.dest('_scss/vendor'));
+   //    .pipe(gulp.dest('_scss'));
 
    // SLICK CAROUSEL - SLIDER MODULE FOR JQUERY
+   // http://kenwheeler.github.io/slick/
    // gulp.src('node_modules/slick-carousel/slick/slick.min.js')
-   //    .pipe(gulp.dest('_js/vendor'));
+   //    .pipe(gulp.dest('_js'));
    // gulp.src('node_modules/slick-carousel/slick/slick.scss')
-   //    .pipe(gulp.dest('_scss/vendor'));
+   //    .pipe(gulp.dest('_scss'));
    done();
 }
 
@@ -157,10 +159,9 @@ function watchFiles(done) {
          '*.html',
          '*.md',
          '_data/*',
-         '_art-pieces/*',
          '_includes/*',
          '_layouts/*',
-         '_posts/*',
+         '_posts/**/*',
          '_img/*',
          '_js/*',
          '_scss/*'

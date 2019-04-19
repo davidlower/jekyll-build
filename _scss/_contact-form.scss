@@ -1,3 +1,9 @@
+form,
+input,
+textarea {
+   appearance: none;
+}
+
 .contact {
    &__form {
       display: flex;
@@ -34,10 +40,6 @@
          @include MQ(s) {
             font-size: $fs - 4px;
          }
-      }
-
-      &[type=text] {
-         appearance: none;
       }
    }
 

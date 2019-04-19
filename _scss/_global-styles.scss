@@ -14,7 +14,6 @@ html {
    line-height: $line-height;
 
    backface-visibility: hidden;
-   scroll-behavior: smooth;
 }
 
 .main-page-wrapper,
@@ -119,6 +118,8 @@ html {
       text-decoration: none;
 
       font-size: 1em;
+
+      cursor: pointer;
 
       &:active {
          transform: translateY(1px);
