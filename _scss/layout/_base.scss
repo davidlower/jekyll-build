@@ -1,0 +1,65 @@
+*
+{
+    box-sizing: border-box;
+}
+
+html,
+body
+{
+    background-color: $white;
+}
+
+html
+{
+    font-family: $p-ff;
+    font-size: $fs;
+    font-weight: 200;
+    line-height: 1rem;
+
+    color: $text;
+
+    -webkit-text-size-adjust: 100%;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+            backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    -webkit-text-stroke-width: 0;
+    scroll-behavior: smooth;
+    @include MQ(s)
+    {
+        font-size: $fs-small;
+    }
+}
+
+body
+{
+    margin: 0;
+}
+
+ol,
+ul
+{
+    padding: 0;
+}
+
+hr
+{
+    display: block;
+    overflow: visible;
+
+    box-sizing: content-box;
+}
+
+img
+{
+    vertical-align: baseline;
+
+    border-style: none;
+}
+
+embed,
+iframe,
+video
+{
+    border: 0;
+}

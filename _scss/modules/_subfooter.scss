@@ -1,0 +1,86 @@
+.subfooter-wrapper
+{
+    color: $text;
+    border-top: solid 1.5px $text;
+    background-color: $white;
+}
+
+.subfooter
+{
+    font-size: $fs-small;
+
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin: 0 auto;
+    padding: 14px 20px;
+
+    @include MQ(m)
+    {
+        align-items: center;
+        flex-direction: column;
+    }
+    @include MQ(s)
+    {
+        font-size: $fs-small - 1px;
+    }
+
+    &__logo
+    {
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+
+        @include MQ(m)
+        {
+            align-items: center;
+            flex-direction: column;
+
+            margin-bottom: 20px;
+        }
+
+        &-dl
+        {
+            width: 40px;
+            height: auto;
+        }
+
+        svg
+        {
+            margin-right: 8px;
+
+            @include MQ(m)
+            {
+                margin: 5px 0 0;
+
+                text-align: center;
+            }
+        }
+
+        &:hover
+        {
+            path
+            {
+                fill: $brand-1-dark;
+            }
+        }
+    }
+
+
+    &__content
+    {
+        line-height: 1.2rem;
+
+        text-align: right;
+
+        @include MQ(m)
+        {
+            line-height: 1rem;
+
+            text-align: center;
+        }
+    }
+}

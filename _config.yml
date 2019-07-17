@@ -2,24 +2,29 @@ exclude: ["README.md", "package.json", "package-lock.json", "gulpfile.js", ".DS_
 include:
    - "_headers"
 
+keep_files: 
+   - 'css' 
+   - 'js' 
+   - 'img' 
+   - 'assets'
+
 permalink: pretty
 
-url: https://jonhdoe.com/
+url: https://example.com/
 baseurl: ""
-website-date: 10th March 2019
-location: Lego land
-title: John Doe website
-company: John Doe company
-email: johndoe@gmail.com
-mobile: 00000 000000
-logo: /assets/img/david-lower-designs-logo.svg
-color: #ffffff
+website-date: 17th March 2019
+location: England
+title: Business name
+company: Comapny name
+email: example@gmail.com
+mobile: 0000 0000
+logo: img/example.svg
 
-meta: John Doe is the king.
-instagram: https://www.instagram.com/johndoe/
-facebook: https://www.facebook.com/johndoe/
+meta: Website metadata goes here
 
-designer-url: https://davidlower.co.uk/
+facebook: https://www.facebook.com/
+
+designer-url: https://davidlowerdesigns.com/
 designer-name: David Lower
 designer-company: David Lower Designs
 

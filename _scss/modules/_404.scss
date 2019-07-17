@@ -1,0 +1,38 @@
+.error
+{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    width: $website-width;
+    max-width: $website-max-width;
+    height: 100vh;
+    margin: 0 auto;
+
+    &__img
+    {
+        width: 80%;
+        height: auto;
+        margin-top: 23vh;
+
+        @include MQ(s)
+        {
+            width: 100%;
+        }
+
+        path
+        {
+            fill: $brand-1;
+        }
+    }
+
+    &__body
+    {
+        margin: 1.5rem 0;
+    }
+
+    &__btn
+    {
+        margin: 0;
+    }
+}

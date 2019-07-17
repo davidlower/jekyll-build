@@ -1,0 +1,23 @@
+// GREY SCALE
+$black: rgba(0, 0, 0, 1) !default;
+$grey-90: rgba(34, 34, 34, 1) !default;
+$grey-80: rgba(43, 43, 43, 1) !default;
+$grey-70: rgba(96, 96, 96, 1) !default;
+$grey-60: rgba(122, 122, 122, 1) !default;
+$grey-50: rgba(147, 147, 147, 1) !default;
+$grey-40: rgba(170, 170, 170, 1) !default;
+$grey-30: rgba(193, 193, 193, 1) !default;
+$grey-20: rgba(215, 215, 215, 1) !default;
+$grey-10: rgba(235, 235, 235, 1) !default;
+$white: rgba(255, 255, 255, 1) !default;
+
+// BRAND COLORS
+$text: #848484 !default;
+
+$brand-1: #1fa2ff !default;
+$brand-1-light: lighten($brand-1, 20%) !default;
+$brand-1-dark: darken($brand-1, 20%) !default;
+
+$brand-2: #96753d !default;
+$brand-2-light: lighten($brand-2, 20%) !default;
+$brand-2-dark: darken($brand-2, 20%) !default;

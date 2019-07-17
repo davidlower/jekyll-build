@@ -8,15 +8,14 @@ layout: compress
 
 <body>
 
-   <div class="main-page-wrapper">
-      {% include nav.html %}
-      {{content}}
-      {% include cookie-banner.html %}
-      {% include sub-footer.html %}
-   </div>
+   {% include nav.html %}
+   {{content}}
+   {% include cookie-banner.html %}
+   {% include subfooter.html %}
+
    <!-- Global site tag (gtag.js) - Google Analytics -->
-   <!-- <script async src="#" nonce="6eece5b0f251e014550f"></script> -->
-   <script src="{{site.baseurl}}/assets/js/index.js" nonce="6eece5b0f251e014550f"></script>
+   <!-- <script async src="#" ></script> -->
+   <script src="{{site.baseurl}}../js/bundle.js"></script>
 </body>
 
 </html>

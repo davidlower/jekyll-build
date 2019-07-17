@@ -3,34 +3,41 @@
   "version": "1.0.0",
   "description": "Main website",
   "main": "index.js",
+  "browserslist": [
+    "last 1 version",
+    "> 5% in gb",
+    "maintained node versions",
+    "not dead"
+  ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "browser-sync": "^2.23.6",
-    "gulp": "^4.0.0",
+    "browser-sync": "^2.26.7",
+    "gulp": "^4.0.2",
     "gulp-autoprefixer": "^6.1.0",
-    "gulp-clean-css": "^4.0.0",
+    "gulp-clean-css": "^4.2.0",
     "gulp-concat": "^2.6.1",
+    "gulp-css-globbing": "^0.2.2",
     "gulp-css-purge": "^3.0.9",
-    "gulp-imagemin": "^5.0.3",
+    "gulp-imagemin": "^6.0.0",
     "gulp-newer": "^1.4.0",
     "gulp-rename": "^1.4.0",
     "gulp-sass": "^4.0.2",
     "gulp-sourcemaps": "^2.6.5",
+    "gulp-strip-debug": "^3.0.0",
     "gulp-uglify-es": "^1.0.4",
+    "imagemin-jpegtran": "^6.0.0",
     "imagemin-mozjpeg": "^8.0.0",
-    "imagemin-optipng": "^6.0.0",
+    "imagemin-pngquant": "^8.0.0",
     "imagemin-svgo": "^7.0.0",
-    "util": "^0.11.1"
+    "imagemin-webp": "^5.1.0",
+    "util": "^0.12.1"
   },
   "dependencies": {
-    "jquery": "^3.4.0",
     "lity": "^2.3.1",
-    "npm": "^6.8.0",
-    "simplegrid": "^1.0.2",
-    "slick-carousel": "^1.8.1"
+    "npm": "^6.10.1"
   }
 }

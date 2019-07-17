@@ -1,0 +1,32 @@
+// SANS-SERIF
+$sans-serif: -apple-system,
+BlinkMacSystemFont,
+'Segoe UI',
+Roboto,
+'Helvetica Neue',
+Arial,
+sans-serif,
+'Apple Color Emoji',
+'Segoe UI Emoji',
+'Segoe UI Symbol' !default;
+// SERIF
+$serif: Georgia,
+Times,
+'Times New Roman',
+serif !default;
+// MONOSPACE
+$monospace: Menlo,
+Monaco,
+Consolas,
+'Courier New',
+monospace !default;
+
+// CUSTOM FONTS
+$p-ff: primary,
+$sans-serif;
+$s-ff: secondary,
+$serif;
+
+// FONT SIZE
+$fs: 16px !default;
+$fs-small: $fs - 2px;

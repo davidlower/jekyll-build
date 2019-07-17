@@ -1,14 +1,17 @@
 /* jshint esversion: 6 */
 
-var cookieBanner = $('.cookie-wrapper');
+const cookie = document.getElementById('cookie');
+const cookieBtn = document.getElementById('cookie__btn');
 
-$('.agree-cookies').click(function() {
-   sessionStorage.setItem("cookieBanner", true);
-   cookieBanner.slideUp(500);
-});
+cookieBtn.addEventListener('click', closeCookie);
 
-if (sessionStorage.getItem("cookieBanner")) {
-
+if (sessionStorage.getItem("cookie")) {
+   cookie.style.display = 'none';
 } else {
-   cookieBanner.slideDown(500);
+   cookie.style.transform = 'translateY(0)';
+}
+
+function closeCookie() {
+   sessionStorage.setItem("cookie", true);
+   cookie.style.transform = 'translateY(100%)';
 }

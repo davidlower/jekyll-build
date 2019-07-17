@@ -1,0 +1,83 @@
+input[type='text'],
+input[type='password'],
+input[type='email'],
+input[type='url'],
+input[type='date'],
+input[type='month'],
+input[type='time'],
+input[type='datetime'],
+input[type='datetime-local'],
+input[type='week'],
+input[type='number'],
+input[type='search'],
+input[type='tel'],
+select,
+textarea
+{
+    font-size: 100%;
+    line-height: 1rem;
+
+    text-transform: none;
+
+    background-clip: padding-box;
+
+       -moz-appearance: none;
+    -webkit-appearance: none;
+}
+
+input[type='color']
+{
+    vertical-align: middle;
+}
+
+input:not([type])
+{
+    line-height: 1rem;
+
+    background-clip: padding-box;
+
+       -moz-appearance: none;
+    -webkit-appearance: none;
+}
+
+select
+{
+    vertical-align: sub;
+}
+
+textarea
+{
+    overflow: auto;
+
+    resize: vertical;
+}
+
+[type='number']::-webkit-inner-spin-button,
+[type='number']::-webkit-outer-spin-button
+{
+    height: auto;
+}
+
+[type='search']
+{
+    outline-offset: -2px;
+
+    -webkit-appearance: textfield;
+}
+
+[type='search']::-webkit-search-decoration
+{
+    -webkit-appearance: none;
+}
+
+::-webkit-file-upload-button
+{
+    font: inherit;
+
+    -webkit-appearance: button;
+}
+
+progress
+{
+    vertical-align: baseline;
+}

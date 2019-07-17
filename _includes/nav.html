@@ -1,34 +1,40 @@
-<header class="nav-wrapper" role="banner" id="nav">
+<header class="nav-wrapper" role="banner">
 
-   <nav class="nav nav-desktop" role="navigation">
-      <!-- <div class="logo-container"> -->
-      <a class="logo-link" href="{{ site.baseurl }}/" aria-hidden="true" tabindex="-1">
-         <img class="logo" src="{{ site.baseurl }}{{ site.logo }}" alt="{{ site.company }} logo">
+   <nav class="nav" id="nav" role="navigation">
+
+      <a class="nav__logo-link" href="{{ site.baseurl }}/#home" aria-hidden="true" tabindex="-1">
+         <img class="nav__logo" src="{{ site.baseurl }}/{{ site.logo }}" alt="{{ site.company }} logo">
       </a>
-      <!-- </div> -->
-      <ul class="nav__list nav__list-desktop nav__list-mobile">
-         <li class="nav__item nav__item-first">
-            <a class="nav__link smooth" href="{{ site.baseurl }}/">
+
+      <ul class="nav__list">
+         <li class="nav__list-item nav__list-item-first">
+            <a class="nav__list-link l-link-primary" href="{{ site.baseurl }}/#home">
                Home
             </a>
          </li>
-         <li class="nav__item">
-            <a class="nav__link smooth" href="{{ site.baseurl }}/about">
+         <li class="l-link-primary nav__list-item">
+            <a class="nav__list-link l-link-primary" href="{{ site.baseurl }}/#services" aria-label="My services">
+               Services
+            </a>
+         </li>
+         <li class="nav__list-item">
+            <a class="nav__list-link l-link-primary" href="{{ site.baseurl }}/#about" aria-label="About me">
                About
             </a>
          </li>
-         <li class="nav__item nav__item-last">
-            <a class="nav__link nav-contact smooth" href="{{ site.baseurl }}/contact">
+         <li class="nav__list-item nav__list-item-last">
+            <a class="l-btn-primary nav-btn" href="{{ site.baseurl }}/#contact" aria-label="Contact me">
                Contact
             </a>
          </li>
       </ul>
-      <div class="burger-icon" id="burger-icon">
-         <div class="burger-icon__line burger-icon__line-1"></div>
-         <div class="burger-icon__line burger-icon__line-2"></div>
-         <div class="burger-icon__line burger-icon__line-3"></div>
-      </div>
+
    </nav>
-   <div class="placeholder none"></div>
-   <div class="placeholder-mobile"></div>
+
+   <div class="burger-icon" id="burger-icon">
+      <div class="burger-icon__line burger-icon__line-1"></div>
+      <div class="burger-icon__line burger-icon__line-2"></div>
+      <div class="burger-icon__line burger-icon__line-3"></div>
+   </div>
+
 </header>

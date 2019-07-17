@@ -1,10 +1,16 @@
-<form class="contact__form" id="contact-form" name="Contact form from website" method="POST" data-netlify="true" role="form" aria-label="Contact me form">
+<div class="contact__form-section">
 
-   <input class="contact__input contact__input-first input" name="Full name" type="text" aria-label="Full name" placeholder="Name" required>
-   <input class="contact__input  input" name="Email address" type="email" aria-label="Email address" placeholder="Email" required>
+   <form class="contact__form" id="contact-form" name="contact form" method="POST" data-netlify="true" role="form"
+      aria-label="Contact me form">
+      <input class="l-input-primary contact__form-input contact__form-input-first" name="Full name" type="text"
+         aria-label="Full name" placeholder="Name" required>
+      <input class="l-input-primary contact__form-input" name="Country location" type="text"
+         aria-label="Country location" placeholder="Country" required>
+      <input class="l-input-primary contact__form-input" name="Email address" type="email" aria-label="Email address"
+         placeholder="Email" required>
+      <textarea class="l-input-primary contact__form-input contact__form-input-last" name="Message"
+         aria-label="Message area" rows="4" wrap="soft" form="contact-form" placeholder="Message" required></textarea>
+      <button class="l-btn-primary contact__form-btn" type="submit">Send</button>
+   </form>
 
-   <textarea class="contact__input contact__input-last text-area input" name="Subject" aria-label="subject area" rows="4" wrap="soft" form="contact-form" placeholder="Subject" required></textarea>
-
-   <button class="global__btn-primary contact__btn" type="submit">Send</button>
-
-</form>
+</div>

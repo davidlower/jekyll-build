@@ -1,9 +1,9 @@
    // GOOGLE ANALYTICS CODE
 
-   // put code here
+
 
    // // RANDOM NONCE GENERATOR
-   // // dec2hex :: Integer -> String
+   // dec2hex :: Integer -> String
    // function dec2hex(dec) {
    //    return ('0' + dec.toString(16)).substr(-2);
    // }

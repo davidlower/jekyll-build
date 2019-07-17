@@ -4,20 +4,21 @@
    <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
    <!-- FAVICON LINKS -->
-   <link rel="apple-touch-icon" sizes="57x57" href="{{site.baseurl}}/../assets/img/favicon.ico/apple-icon-57x57.png">
-   <link rel="apple-touch-icon" sizes="60x60" href="{{site.baseurl}}/../assets/img/favicon.ico/apple-icon-60x60.png">
-   <link rel="apple-touch-icon" sizes="72x72" href="{{site.baseurl}}/../assets/img/favicon.ico/apple-icon-72x72.png">
-   <link rel="apple-touch-icon" sizes="76x76" href="{{site.baseurl}}/../assets/img/favicon.ico/apple-icon-76x76.png">
-   <link rel="apple-touch-icon" sizes="114x114" href="{{site.baseurl}}/../assets/img/favicon.ico/apple-icon-114x114.png">
-   <link rel="apple-touch-icon" sizes="120x120" href="{{site.baseurl}}/../assets/img/favicon.ico/apple-icon-120x120.png">
-   <link rel="apple-touch-icon" sizes="144x144" href="{{site.baseurl}}/../assets/img/favicon.ico/apple-icon-144x144.png">
-   <link rel="apple-touch-icon" sizes="152x152" href="{{site.baseurl}}/../assets/img/favicon.ico/apple-icon-152x152.png">
-   <link rel="apple-touch-icon" sizes="180x180" href="{{site.baseurl}}/../assets/img/favicon.ico/apple-icon-180x180.png">
-   <link rel="icon" type="image/png" sizes="192x192" href="{{site.baseurl}}/../assets/img/favicon.ico/android-icon-192x192.png">
-   <link rel="icon" type="image/png" sizes="32x32" href="{{site.baseurl}}/../assets/img/favicon.ico/favicon-32x32.png">
-   <link rel="icon" type="image/png" sizes="96x96" href="{{site.baseurl}}/../assets/img/favicon.ico/favicon-96x96.png">
-   <link rel="icon" type="image/png" sizes="16x16" href="{{site.baseurl}}/../assets/img/favicon.ico/favicon-16x16.png">
-   <link rel="manifest" href="{{site.baseurl}}/../assets/img/favicon.ico/manifest.json" nonce="db472b84fce70c412a78">
+   <link rel="apple-touch-icon" sizes="57x57" href="{{site.baseurl}}/../img/favicon.ico/apple-icon-57x57.png">
+   <link rel="apple-touch-icon" sizes="60x60" href="{{site.baseurl}}/../img/favicon.ico/apple-icon-60x60.png">
+   <link rel="apple-touch-icon" sizes="72x72" href="{{site.baseurl}}/../img/favicon.ico/apple-icon-72x72.png">
+   <link rel="apple-touch-icon" sizes="76x76" href="{{site.baseurl}}/../img/favicon.ico/apple-icon-76x76.png">
+   <link rel="apple-touch-icon" sizes="114x114" href="{{site.baseurl}}/../img/favicon.ico/apple-icon-114x114.png">
+   <link rel="apple-touch-icon" sizes="120x120" href="{{site.baseurl}}/../img/favicon.ico/apple-icon-120x120.png">
+   <link rel="apple-touch-icon" sizes="144x144" href="{{site.baseurl}}/../img/favicon.ico/apple-icon-144x144.png">
+   <link rel="apple-touch-icon" sizes="152x152" href="{{site.baseurl}}/../img/favicon.ico/apple-icon-152x152.png">
+   <link rel="apple-touch-icon" sizes="180x180" href="{{site.baseurl}}/../img/favicon.ico/apple-icon-180x180.png">
+   <link rel="icon" type="image/png" sizes="192x192"
+      href="{{site.baseurl}}/../img/favicon.ico/android-icon-192x192.png">
+   <link rel="icon" type="image/png" sizes="32x32" href="{{site.baseurl}}/../img/favicon.ico/favicon-32x32.png">
+   <link rel="icon" type="image/png" sizes="96x96" href="{{site.baseurl}}/../img/favicon.ico/favicon-96x96.png">
+   <link rel="icon" type="image/png" sizes="16x16" href="{{site.baseurl}}/../img/favicon.ico/favicon-16x16.png">
+   <link rel="manifest" href="{{site.baseurl}}/../img/favicon.ico/manifest.json" nonce="db472b84fce70c412a78">
    <meta name="msapplication-TileColor" content="{{ site.color }}">
    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
    <meta name="theme-color" content="{{ site.color }}">
@@ -27,17 +28,20 @@
    <!-- GOOGLE ANALYTICS META -->
    <!-- put google analytics code here -->
    <!-- META TAGS TWITTER META TAGS & FACEBOOK META TAGS -->
-   <meta name="description" content="{% if page.meta %}{{ page.meta | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.meta }}{% endif %}">
+   <meta name="description"
+      content="{% if page.meta %}{{ page.meta | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.meta }}{% endif %}">
 
    <meta property="og:site_name" content="{{ site.title }}">
    <meta property="og:url" content="{% if page.url %}{{ site.url }}{{ page.url }}{% else %}{{ site.url }}{% endif %}">
    <meta name="twitter:card" content="summary_large_image">
 
-   <meta property="og:title" content="{% if page.title %}{{ site.title }} &#8226; {{page.title}}{% else %}{{ site.title }}{% endif %}">
-   <meta name="twitter:title" content="{% if page.title %}{{ site.title }} &#8226; {{page.title}}{% else %}{{ site.title }}{% endif %}">
+   <meta property="og:title"
+      content="{% if page.title %}{{ site.title }} &#8226; {{page.title}}{% else %}{{ site.title }}{% endif %}">
+   <meta name="twitter:title"
+      content="{% if page.title %}{{ site.title }} &#8226; {{page.title}}{% else %}{{ site.title }}{% endif %}">
    <meta property="og:type" content="website">
-   <meta property="og:image" content="{{ site.baseurl }}/assets/img/facebook-meta-img.jpg">
-   <meta name="twitter:image" content="{{ site.baseurl }}/assets/img/facebook-meta-img.jpg">
+   <meta property="og:image" content="{{ site.baseurl }}/img/facebook-meta-img.jpg">
+   <meta name="twitter:image" content="{{ site.baseurl }}/img/facebook-meta-img.jpg">
 
    {% if page.meta %}
    <meta property="og:description" content="{{ page.meta | strip_html | strip_newlines | truncate: 160 }}">
@@ -49,5 +53,5 @@
    <!-- META TAGS END -->
 
    <!-- STYLESHEET LINK -->
-   <link rel="stylesheet" href="{{site.baseurl}}/../assets/css/index.css">
+   <link rel="stylesheet" href="{{site.baseurl}}/../css/bundle.css">
 </head>
