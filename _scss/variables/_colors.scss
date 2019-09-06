@@ -12,7 +12,6 @@ $grey-10: rgba(235, 235, 235, 1) !default;
 $white: rgba(255, 255, 255, 1) !default;
 
 // BRAND COLORS
-$text: #848484 !default;
 
 $brand-1: #1fa2ff !default;
 $brand-1-light: lighten($brand-1, 20%) !default;
@@ -21,3 +20,5 @@ $brand-1-dark: darken($brand-1, 20%) !default;
 $brand-2: #96753d !default;
 $brand-2-light: lighten($brand-2, 20%) !default;
 $brand-2-dark: darken($brand-2, 20%) !default;
+
+$text: #848484 !default;

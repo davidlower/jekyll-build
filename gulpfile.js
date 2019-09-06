@@ -196,7 +196,7 @@ function watchFiles(done) {
          '_includes/**/*.html',
          '_layouts/*',
          '_posts/**/*',
-         '_config-yml',
+         '_config.yml',
          'assets/**/*'
       ],
       gulp.series(jekyllBuild, browserSyncReload));

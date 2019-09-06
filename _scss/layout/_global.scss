@@ -5,8 +5,8 @@
     font-size: 4.7rem;
     line-height: 5.2rem;
 
-    width: $website-width;
-    max-width: $website-max-width;
+    width: var(--website-width);
+    max-width: var(--website-max-width);
     margin: 0 auto 80px;
 
     @include MQ(s)

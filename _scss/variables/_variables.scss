@@ -1,4 +1,11 @@
 $nav-height: 80px;
 
-$website-width: 90%;
-$website-max-width: 900px;
+html {
+   --section-pad: 100px;
+   --website-width: 90%;
+   --website-max-width: 900px;
+
+   @include MQ(m) {
+      --section-pad: 50px;
+   }
+}

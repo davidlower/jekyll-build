@@ -40,6 +40,8 @@
             flex-direction: column;
 
             margin-bottom: 20px;
+
+            text-align: center;
         }
 
         &-dl
@@ -54,9 +56,13 @@
 
             @include MQ(m)
             {
-                margin: 5px 0 0;
+                margin-right: 0;
+                margin-bottom: 5px;
+            }
 
-                text-align: center;
+            path
+            {
+                fill: $brand-2;
             }
         }
 
@@ -64,7 +70,7 @@
         {
             path
             {
-                fill: $brand-1-dark;
+                fill: $brand-2-dark;
             }
         }
     }
