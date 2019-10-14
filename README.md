@@ -35,3 +35,7 @@ Remove the / from the disallow section so it can be crawled when ready for produ
 ### cookie Policy
 
 Make sure you include all the third party additions to the site. Currently it includes only google Analytics
+
+### Cookie banner JS file
+
+Change the name of createCookie section - currently named Website Cookie.
