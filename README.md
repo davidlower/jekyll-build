@@ -4,7 +4,7 @@ $ npm install
 
 ### gitignore
 
-Update this file first - remove all # from the first paragraph of files AND block _site folder so it is uploaded to git.
+Update this file first - remove all # from the first paragraph except assets folder (block that off) AND block _site folder (add a #) so it is uploaded to git.
 
 ### Initialise git
 
